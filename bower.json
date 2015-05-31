@@ -1,0 +1,26 @@
+{
+  "name": "log4javascript-1.4.13",
+  "version": "1.4.13",
+  "homepage": "https://github.com/gambias/log4javascript",
+  "authors": [
+    "Robert Carcasses Quevedo <carcasses@gmail.com>"
+  ],
+  "description": "log4javascript",
+  "main": "./log4javascript.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "js",
+    "logging",
+    "log4javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
