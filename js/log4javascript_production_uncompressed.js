@@ -1215,6 +1215,8 @@
 					formattedValue += layout.lineBreak;
 				}
 				formattedValue += prefix + "]";
+			} else if(valType === "object"){
+				formattedValue = "\"" + escapeNewLines(JSON.stringify(val).replace(/\"/g, "\\\"")) + "\"";
 			} else if (valType !== "number" && valType !== "boolean") {
 				formattedValue = "\"" + escapeNewLines(toStr(val).replace(/\"/g, "\\\"")) + "\"";
 			} else {

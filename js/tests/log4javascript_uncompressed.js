@@ -434,7 +434,7 @@ xn.test.suite("log4javascript tests", function(s) {
 	s.test("JsonLayout with object type message test", function(t) {
 		t.appender.setLayout(new log4javascript.JsonLayout());
 		t.logger.debug({});
-		t.assertRegexMatches(/^{"logger":"test","timestamp":\d+,"level":"DEBUG","url":".*","message":"\[object Object\]"}$/, t.appender.logMessages[0]);
+		t.assertRegexMatches(/^{"logger":"test","timestamp":\d+,"level":"DEBUG","url":".*","message":"\{\}"}$/, t.appender.logMessages[0]);
 	});
 
 	s.test("JsonLayout with boolean type message test", function(t) {

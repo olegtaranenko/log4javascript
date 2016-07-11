@@ -1,6 +1,9 @@
 log4javascript change log
 -------------------------
 
+1.4.14 (11/07/2016)
+- Fix for JSONLayout use JSON.stringify instead of Object.toString
+
 1.4.13 (23/5/2015)
 - Fix for BrowserConsolerAppender regression in last version (feature request
   14)

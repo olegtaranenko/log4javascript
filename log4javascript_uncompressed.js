@@ -24,9 +24,9 @@
  * stored in the same directory as the main log4javascript.js file.
  *
  * Author: Tim Down <tim@log4javascript.org>
- * Version: 1.4.13
+ * Version: 1.4.14
  * Edition: log4javascript
- * Build date: 23 May 2015
+ * Build date: 11 July 2016
  * Website: http://log4javascript.org
  */
 
@@ -1215,6 +1215,8 @@
 					formattedValue += layout.lineBreak;
 				}
 				formattedValue += prefix + "]";
+			} else if(valType === "object"){
+				formattedValue = "\"" + escapeNewLines(JSON.stringify(val).replace(/\"/g, "\\\"")) + "\"";
 			} else if (valType !== "number" && valType !== "boolean") {
 				formattedValue = "\"" + escapeNewLines(toStr(val).replace(/\"/g, "\\\"")) + "\"";
 			} else {
