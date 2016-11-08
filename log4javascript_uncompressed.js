@@ -4831,6 +4831,9 @@
 				}
 			};
 
+			this.getQueuedLoggingEvents = function() {
+				return queuedLoggingEvents;
+			};
 			var appendQueuedLoggingEvents = function() {
 				while (queuedLoggingEvents.length > 0) {
 					queuedLoggingEvents.shift().append();
